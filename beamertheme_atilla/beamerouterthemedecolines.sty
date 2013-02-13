@@ -77,10 +77,10 @@
   \atilla@current=\insertframenumber%
   \atilla@total=\inserttotalframenumber%
   \atilla@barpos=\paperwidth%
+  \divide\atilla@barpos by 5
   \multiply\atilla@barpos by \atilla@current%
   \divide\atilla@barpos by \atilla@total%
   \multiply\atilla@barpos by 4
-  \divide\atilla@barpos by 5
   \advance\atilla@barpos by -50px
   \leavevmode%
   % Page number.
@@ -110,7 +110,7 @@
   \begin{beamercolorbox}[wd=.9\paperwidth,ht=\beamer@decolines@linebottom,dp=0pt]{linebottom}%
   \end{beamercolorbox}%
   }%
-  \hfill \makebox(0,0)[r,b]{ \includegraphics[scale=0.75]{penguindrum.pdf} \hskip\atilla@barpos }%
+  \hfill \makebox(0,0)[r,b]{ \includegraphics[scale=0.75]{beamertheme_atilla/penguindrum.pdf} \hskip\atilla@barpos }%
 }
 
 \defbeamertemplate*{headline}{decolines theme}
