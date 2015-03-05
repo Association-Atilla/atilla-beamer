@@ -93,9 +93,10 @@
   } %
   % First line.
   \hbox{%
-  \begin{beamercolorbox}[wd=.2\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=\beamer@decolines@lineup,dp=2pt]{}%
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.8\paperwidth,ht=\beamer@decolines@lineup,dp=0pt]{lineup}%
+  \begin{beamercolorbox}[wd=.8\paperwidth,ht=\beamer@decolines@lineup,dp=2pt]{lineup}%
+  	\usebeamerfont{palette primary}~\inserttitle~by~\insertauthor
   \end{beamercolorbox}%
   } %
   % Second line.
@@ -110,7 +111,7 @@
   \begin{beamercolorbox}[wd=.9\paperwidth,ht=\beamer@decolines@linebottom,dp=0pt]{linebottom}%
   \end{beamercolorbox}%
   }%
-  \hfill \makebox(0,0)[r,b]{ \includegraphics[scale=0.75]{beamertheme_atilla/penguindrum.pdf} \hskip\atilla@barpos }%
+  \hfill \makebox(0,0)[r,b]{ \includegraphics[scale=0.25]{beamertheme_atilla/penguindrum.png} \hskip5pt }%
 }
 
 \defbeamertemplate*{headline}{decolines theme}
@@ -125,6 +126,7 @@
       \fi%
       \vskip0.4em%
       \fi%
+	\begin{flushright}\today~~\vspace{-0.15cm}\end{flushright}
     \end{beamercolorbox}%
   } %
   \vskip0pt%
